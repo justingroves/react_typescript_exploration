@@ -1,21 +1,12 @@
-import { useState } from "react";
+import Star from "./Star";
+import { Checkbox } from "./Checkbox";
 
-type AppProps = {
-  item: string;
-};
-
-function App({ item }: AppProps) {
-  const [fabricColor, setFabricColor] = useState("purple");
-
+function App() {
   return (
-    <div>
-      <h1>
-        {fabricColor} {item}
-      </h1>
-      <button onClick={() => setFabricColor("blue")}>
-        Make the Jacket Blue
-      </button>
-    </div>
+    <>
+      <Star />
+      <Checkbox />
+    </>
   );
 }
 
